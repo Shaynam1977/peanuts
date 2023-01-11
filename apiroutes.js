@@ -5,7 +5,7 @@ let store=require("./db/db.json")
 router.get('/notes', (req, res) =>
  res.json(store)
 );
-
+// post route that takes in values as rec.body
 router.post('/notes', (req, res) =>
  { let newNoteModel={
     id: Math.random(),
